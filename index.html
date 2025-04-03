@@ -27,6 +27,104 @@
 </head>
 
 <body>
+
+    <section class="container-fluid bg-primary min-vh-100 min-md-100 p-0">
+        <!-- imagen de fondo -->
+        <div class="position-absolute start-0 top-0">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/background-pattern-desktop.svg">
+                <source media="(max-width: 767px)" srcset="images/background-pattern-mobile.svg">
+                <img src="images/background-pattern-desktop.svg" alt="Imagen de fondo" class="img-fluid">
+            </picture>
+        </div>
+        <!-- accordeon -->
+        <div class="container">
+            <div class="row justify-content-center align-items-center min-vh-100">
+                <div class="card col-11 col-md-8 col-lg-6 shadow-lg border-0 rounded-4">
+                    <div class="card-header">
+                        <img src="images/icon-star.svg" alt="start icon">
+                        <h1 class="d-inline-block">FAQs</h1>
+                    </div>
+                    <div class="card-body">
+                        <section class="accordion" id="myaccordion">
+                            <!-- question 01 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button type="button" class="accordion-button collapsed fw-bold"
+                                        data-bs-toggle="collapse" data-bs-target="#question-one" aria-expanded="false"
+                                        aria-controls="question-one">
+                                        What is Frontend Mentor, and how will it help me?
+                                    </button>
+                                </h2>
+                                <div id="question-one" class="accordion-collapse collapse"
+                                    data-bs-parent="#myaccordion">
+                                    <div class="accordion-body">
+                                        <p>Frontend Mentor offers realistic coding challenges to help developers improve
+                                            their
+                                            frontend coding skills with projects in HTML, CSS, and JavaScript. It's
+                                            suitable for
+                                            all levels and ideal for portfolio building.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- question 02 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button type="button" class="accordion-button collapsed fw-bold"
+                                        data-bs-toggle="collapse" data-bs-target="#question-two" aria-expanded="false"
+                                        aria-controls="question-two">
+                                        Is Frontend Mentor free?
+                                    </button>
+                                </h2>
+                                <div id="question-two" class="accordion-collapse collapse"
+                                    data-bs-parent="#myaccordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the
+                                            free
+                                            option providing access to a range of projects suitable for all skill
+                                            levels.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- question 03 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button type="button" class="accordion-button collapsed fw-bold"
+                                        data-bs-toggle="collapse" data-bs-target="#question-three" aria-expanded="false"
+                                        aria-controls="question-three">
+                                        Can I use Frontend Mentor projects in my portfolio?
+                                    </button>
+                                </h2>
+                                <div id="question-three" class="accordion-collapse collapse"
+                                    data-bs-parent="#myaccordion">
+                                    <div class="accordion-body">
+                                        <p>Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+                                            way to showcase your skills to potential employers!</p>
+                                    </div>
+                                </div>
+                            <!-- question 04 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button type="button" class="accordion-button collapsed fw-bold"
+                                        data-bs-toggle="collapse" data-bs-target="#question-four" aria-expanded="false"
+                                        aria-controls="question-four">
+                                        How can I get help if I'm stuck on a Frontend Mentor challenge?
+                                    </button>
+                                </h2>
+                                <div id="question-four" class="accordion-collapse collapse"
+                                    data-bs-parent="#myaccordion">
+                                    <div class="accordion-body">
+                                        <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+                                            channel where you can ask questions and seek support from other community members.</p>
+                                    </div>
+                                </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
